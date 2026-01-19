@@ -3,15 +3,19 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <View style={Styles.ctaBanner}>
+    <View style={Styles.ctaBanner} className='flex-row relative'>
       <View className="">
         <Text className="text-slate-100 text-4xl">This week </Text>
-        <Text className='text-4xl'>fresh picks</Text>
-        <TouchableOpacity className="bg-white">
-          <Text className='bg-white my-4'>Explore</Text>
+        <Text className="text-4xl">fresh picks</Text>
+        <TouchableOpacity className="bg-slate-100 rounded-3xl my-20 w-fit">
+          <Text className="p-2 text-center font-bold ">Explore</Text>
         </TouchableOpacity>
       </View>
-      <Image />
+      <Image
+        source={require("../assets/images/banner.png")}
+        style={{ width: 300, height: 300 }}
+        className='bottom-0 absolute right-0'
+      />
     </View>
   );
 }
@@ -23,6 +27,6 @@ const Styles = StyleSheet.create({
     backgroundColor: "green",
     padding: 10,
     minHeight: 250,
-    borderRadius: 30,
+    borderRadius: 10,
   },
 });
