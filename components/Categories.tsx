@@ -14,10 +14,10 @@ const Categories = () => {
   const renderItem = ({ item }: { item: { id: number; Category: string } }) => (
     <TouchableOpacity
       activeOpacity={0.7}
-      className="flex-1 mx-1.5 my-1.5" // ← flex-1 + margin = even spacing
+      className="flex-1 mx-1 my-1.5" // ← flex-1 + margin = even spacing
     >
-      <View className="bg-white border border-gray-200 rounded-2xl p-5 items-center shadow-sm h-28">
-        <Text className="text-green-700 font-medium text-[15px] text-center">
+      <View className="bg-white border border-gray-200 rounded-2xl p-5 items-center shadow-sm h-20">
+        <Text className="text-green-700 font-medium text-[10px] text-center">
           {item.Category}
         </Text>
       </View>
@@ -34,7 +34,7 @@ const Categories = () => {
         data={categoriesData}
         renderItem={renderItem}
         keyExtractor={(item) => item.id.toString()}
-        numColumns={2} // ← most important: creates the grid/row layout
+        numColumns={3} // ← most important: creates the grid/row layout
         columnWrapperStyle={{
           // optional: better spacing between rows
           justifyContent: "space-between",
