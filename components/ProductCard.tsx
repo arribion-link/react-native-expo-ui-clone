@@ -3,7 +3,7 @@ import React from "react";
 
 const ProductCard = ({ name = "Fresh Apple", price = "KSh 150", imageUrl }: { name?: string; price?: string; imageUrl?: string }) => {
   return (
-    <View className="w-44 h-64 pb-4 bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 mr-4">
+    <View className="max-w-[100%] h-64 pb-4 bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 mr-4">
       {/* Product Image */}
       <Image
         source={{

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Profile = () => {
   const userData = {
-    name: "JEFF METHIA",
+    name: "JEFF ARRIBION",
     email: "mutethia@example.com"
   }
   return (
